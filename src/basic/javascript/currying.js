@@ -7,7 +7,7 @@ function __currying(fn) {
             return fn.apply(this, args);
         }
         [].push.apply(args, arguments);
-        // todo: why
+        // warning: es2015 strict abandon arguments.callee
        return arguments.callee;
     }
 }
