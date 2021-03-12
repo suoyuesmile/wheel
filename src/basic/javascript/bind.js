@@ -8,6 +8,7 @@ Function.prototype.__bind = function() {
     }
 }
 
+// test
 var obj = {
     name: 'this bind obj ok!'
 }
