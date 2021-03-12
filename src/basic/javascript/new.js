@@ -6,10 +6,11 @@ function Fn() {
     this.name = 'ok';
 }
 
-function __new(Fn) {
-    var newObj = {};
-    newObj.__proto__ = Fn.prototype;
-    return newObj;
+function __new() {
+    var constructor = Array.prototype.shift.call(arguments); 
+    var newObj = Object.create(constructor.prototype);
+    var constructResult = constructor.apply(newObj, arguments);
+    return constructResult instanceof Object ? constructResult: newObj;
 }
 
 
@@ -18,5 +19,5 @@ var instance = new Fn();
 var instance2 = __new(Fn);
 
 
-console.log(instance);
-console.log(instance2);
+// console.log('new: ', instance);
+console.log('__new: ', instance2);
