@@ -1,4 +1,4 @@
-function __copyShadow(origin) {
+function __copy_shadow(origin) {
     var newObj = {};
     for (const key in origin) {
         newObj[key] = origin[key];
@@ -21,5 +21,5 @@ var obj = {
     work: workArr,
 }
 
-var copyObj = __copyShadow(obj);
+var copyObj = __copy_shadow(obj);
 console.log(copyObj);
