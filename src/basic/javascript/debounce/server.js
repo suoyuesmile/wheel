@@ -12,7 +12,7 @@ const server = http.createServer(async(req, res) => {
         res.writeHead(200, {
             'content-type': 'text/html; charset=utf-8'
         });
-        const demoPath = path.resolve(__dirname, 'debounce.html');
+        const demoPath = path.resolve(__dirname, 'client.html');
         const html = fs.readFileSync(demoPath);
         res.write(html);
         res.end();
@@ -21,7 +21,6 @@ const server = http.createServer(async(req, res) => {
     if (req.url.match('/data')) {
         const query = req.url.split('?')[1];
         const searchParams = new URLSearchParams(query);
-        console.log(searchParams);
         const countValue = searchParams.get('count');
         await wait(3000);
         res.write(`responce ok ${countValue}`);
@@ -30,3 +29,4 @@ const server = http.createServer(async(req, res) => {
 });
 
 server.listen(3000)
+console.log('http://localhost:3000')

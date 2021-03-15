@@ -25,13 +25,19 @@
         </script>
     </head>
     <body>
-        <h2>例子1: 点击按钮请求防抖</h2>
-        <button class="add-btn">+1</button>
+        <h2>点击按钮请求防抖</h2>
+        <button class="debounce-btn">+1</button>
+        <h2>点击按钮请求节流</h2>
+        <button class="throttle-btn">+1</button>
+        <h2>count:</h2>
         <div class="count">0</div>
+        <h2>data:</h2>
         <div class="count-data"></div>
+
         <script>
             var count = 0;
-            var oButtons = document.getElementsByClassName('add-btn');
+            var oDebounceBtns = document.getElementsByClassName('debounce-btn');
+            var oThrottleBtns = document.getElementsByClassName('throttle-btn');
             var oCounts = document.getElementsByClassName('count');
             var oCountDatas = document.getElementsByClassName('count-data');
             var oInputs = document.getElementsByClassName('input');
@@ -39,10 +45,14 @@
             var oCount = oCounts.length && oCounts[0];
             var oCountData = oCountDatas.length && oCountDatas[0];
 
-            if (oButtons.length) {
-                oButtons[0].addEventListener('click', __debounce(onClick, 2000), false)
+            if (oDebounceBtns.length) {
+                oDebounceBtns[0].addEventListener('click', __debounce(onClick, 2000), false)
             }
 
+            if (oThrottleBtns.length) {
+                oThrottleBtns[0].addEventListener('click', __throttle(onClick, 2000), false)
+            }
+            
             async function onClick() {
                 count++;
                 oCount.textContent = count;
@@ -53,7 +63,7 @@
                 oCountData.innerHTML = res;
             }
 
-            // 一段时间后执行下一次
+            // 防抖函数
             function __debounce(fn, timeInstance) {
                 var timer = null;
                 return function() {
@@ -65,6 +75,8 @@
                     }, timeInstance);
                 }
             }
+
+            function __throttle() {}
         </script>
     </body>
 </html>

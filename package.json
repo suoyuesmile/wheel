@@ -1,0 +1,12 @@
+{
+  "name": "wheel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/suoyuesmile/wheel.git",
+  "author": "shaosuo <suoyuesmile@163.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+      "debounce": "node src/basic/javascript/debounce/server.js"
+  }
+}
