@@ -1,7 +1,9 @@
 # 前端轮子集合
-  <a href="https://github.com/suoyuesmile/wheel>
-    <img width="200" height="200" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon.png">
+<div align="center">
+  <a href="https://github.com/suoyuesmile/wheel">
+    <img width="200" height="200" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon.png" />
   </a>
+</div>
 ## 介绍
 
 ## 这是一个怎样的开源库？
