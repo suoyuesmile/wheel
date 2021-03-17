@@ -1,47 +1,86 @@
-# 前端轮子集合
 <div align="center">
   <a href="https://github.com/suoyuesmile/wheel">
-    <img width="200" height="200" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon2.png" />
+    <img width="400" height="400" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon2.png" />
   </a>
+  <h2 style="font-size: 5rem; font-weight: bold;" >Frontend Wheel<p/>
 </div>
 
-## 这是一个怎样的开源库？
+## Introduce
 
 
-#### 轮子实现列表
+#### Why do it?
 
-
-## 为什么要造轮子？
+## List of Contents
 #### JavaScipt
 
-- [x] ajax  
-- [x] axios
-- [x] apply
-- [x] bind
-- [x] call
-- [x] class
-- [x] copy-shadow
-- [x] copy-deep
-- [x] currying
-- [x] debounce
-- [x] flat
-- [x] instance of
-- [x] new
-- [x] promise
-- [x] sleep
+- [x] [ajax](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/ajax.js)
+- [x] [axios](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/axios.js)
+- [x] [apply](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/apply.js)
+- [x] [bind](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/bind.js)
+- [x] [call](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/call.js)
+- [x] [class](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/class.js)
+- [x] [copy-shadow](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/copy-shadow.js)
+- [x] [copy-deep](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/copy-deep.js)
+- [x] [currying](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/currying.js)
+- [x] [debounce](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/debounce.js)
+- [x] [flat](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/flat.js)
+- [x] [instanceof](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/instanceof.js)
+- [x] [new](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/new.js)
+- [x] [promise](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/promise.js)
+- [x] [sleep](https://github.com/suoyuesmile/wheel/blob/master/src/basic/javascript/sleep.js)
+
+#### CSS
+- [x] [bfc](https://github.com/suoyuesmile/wheel/tree/master/src/basic/bfc)
+- [x] [hairline](https://github.com/suoyuesmile/wheel/tree/master/src/basic/css/haireline)
+- [x] [flexbox](https://github.com/suoyuesmile/wheel/tree/master/src/basic/css/flexbox)
+- [x] [make-icon](https://github.com/suoyuesmile/wheel/tree/master/src/basic/css/make-icon)
+- [x] [skin](https://github.com/suoyuesmile/wheel/tree/master/src/basic/css/skin)
+
+#### component
+- [ ] button
+- [ ] cell
+- [ ] panel
+- [ ] input
+- [ ] popup
+- [ ] dialog
+
+#### framework-base
+- [ ] parser
+- [ ] transfrom
+- [ ] compile
+- [ ] observe
+
+#### framework-mini
+- [ ] webpack
+- [ ] vue
+- [ ] vuex
+- [ ] router
+- [ ] vite
 
 
-## 怎样去造一个好的轮子？
+## Get Started
+#### 1. clone repo & cd dir
+```sh
+git clone https://github.com/suoyuesmile/wheel.git
+```
+#### 2. install vscode node & run
 
-## 避免重复造轮子
+#### 3. run practice
 
-- [JavaScript 开源轮子中心]()
-- [CSS 开源轮子中心]()
-- [Vue 开源轮子中心]()
-- [React 开源轮子中心]()
-- [打包工具 开源轮子中心]()
-- [项目 开源轮子中心]()
+#### 4. test case
 
-## 现在开始吧
-### 已有轮子列表
-### 计划要造的轮子
+## Contribution
+#### How to Pull Request?
+
+
+## Study Source Code
+
+#### How to read source?
+
+#### How to debug code?
+#### How to make wheels?
+
+## Search Resource
+**Avoid repeated manufacturing of wheels**
+
+
