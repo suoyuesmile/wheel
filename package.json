@@ -7,6 +7,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-      "debounce": "node src/basic/javascript/debounce/server.js"
+      "debounce": "node practice/debounce/server.js"
   }
 }
