@@ -6,14 +6,17 @@
 </div>
 
 ## Introduce
+
+#### OverView
+
 This project mainly consists of two parts：
 
 1. Implement some key and commonly used JS API as the laboratory for developers to build wheels
-
 2. Collect common and mature front-end libraries as the treasure house of production environment
 
 
 #### Why do it?
+
 Implementing API is the best way to learn programming. The front end is no exception. For many important JS APIs or components, only by writing their core code can we have a deeper understanding of their principles and use them freely.
 
 #### What can you do?
@@ -72,6 +75,7 @@ Implementing API is the best way to learn programming. The front end is no excep
 
 
 ## Get Started
+
 #### 1. clone repo & cd dir
 ```sh
 git clone https://github.com/suoyuesmile/wheel.git
@@ -83,6 +87,7 @@ git clone https://github.com/suoyuesmile/wheel.git
 #### 4. test case
 
 ## Contribution
+
 #### How to Pull Request?
 
 
@@ -91,9 +96,11 @@ git clone https://github.com/suoyuesmile/wheel.git
 #### How to read source?
 
 #### How to debug code?
+
 #### How to make wheels?
 
 ## Search Resource
+
 **Avoid repeated manufacturing of wheels**
 
 
