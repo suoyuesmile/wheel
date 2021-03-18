@@ -7,6 +7,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-      "debounce": "node practice/debounce/server.js"
+    "debounce": "node practice/debounce/server.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.3"
   }
 }

@@ -2,7 +2,7 @@
   <a href="https://github.com/suoyuesmile/wheel">
     <img width="300" height="300" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon2.png" />
   </a>
-  <h2 style="font-size: 5rem; font-weight: bold;" >Frontend Wheel<p/>
+  <h2 style="font-size: 5rem; font-weight: bold;" >Frontend Whee </h2>
 </div>
 
 ## OverView

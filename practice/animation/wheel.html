@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                --outer-size: 200px;
+                --inner-size: 140px;
+                --core-size: 50px;
+                --post-width: 30px;
+                --triangle-width: 40px;
+                --secondary-color: rgba(240,250,252, 1);
+                --primary-color: #54BF8E;
+                --border-color: white;
+                --core-color: rgba(164,210,219, 0.9);
+                --core-triangle: rgb(240,250,252);
+                --html-color: #EF6535;
+                --css-color: #35ACE2;
+                --js-color: #F1BC37;
+            }
+
+            @keyframes rotate {
+                0%{
+                    transform: rotate(0deg);
+                }
+                30%{
+                    transform: rotate(90deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+
+            .wheel {
+                position: relative;
+                width: var(--outer-size);
+                height: var(--outer-size);
+                border-radius: 50%;
+                background: var(--primary-color);
+                /* animation: rotate 5s linear infinite; */
+                background-size: 40px 40px;
+                background-size: 0.7em 1em;
+                background-position: 0 -0.5em;
+                transform: rotate(90deg);
+            }
+            .wheel-center {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+            }
+            .wheel__border {
+                border: 4px var(--border-color) solid;
+            }
+            .wheel__border--hair {
+                border: 1px var(--border-color) solid;
+            }
+            .wheel__inner-border {
+                position: relative;
+                width: var(--inner-size);
+                height: var(--inner-size);
+                background: var(--secondary-color);
+                overflow: hidden;
+
+            }
+            .wheel__core {
+                position: absolute;
+                width: var(--core-size);
+                height: var(--core-size);
+                background: var(--core-color);
+            }
+            .wheel__html, .wheel__css, .wheel__js {
+                position: absolute;
+                font-size: small;
+                color: white;
+                font-weight: bold;
+                line-height: var(--post-width);
+                background: var(--primary-color);
+                width: calc(var(--inner-size) / 2);
+                height: var(--post-width);
+                transform-origin: right;
+                transform: translateY(-50%);
+            }
+            .wheel__js {
+                top: 50%;
+                left: calc(50%);
+                background: var(--js-color);
+            }
+            .wheel__html {
+                right: 50%;
+                top: calc(50% - var(--post-width) / 2);
+                transform: rotate(60deg);
+                background: var(--html-color);
+
+            }
+            .wheel__css {
+                top: calc(50% - var(--post-width) / 2);
+                right: 50%;
+                transform: rotate(-60deg);
+                background: var(--css-color);
+            }
+            .js__text {
+                padding-left: calc(var(--core-size) / 2);
+                text-align: center;
+            }
+            .css__text {
+                padding-right: calc(var(--core-size) / 2);
+                text-align: center;
+            }
+            .html__text {
+                padding-left: calc(var(--core-size) / 2 + 4px);
+                text-align: center;
+                transform: rotate(180deg);
+            }
+            .triangle {
+                position: absolute;
+                border-left: calc(var(--triangle-width) * 0.58) solid transparent;  
+				border-right: calc(var(--triangle-width) * 0.58) solid transparent;  
+				border-bottom: var(--triangle-width) solid var(--core-triangle);  
+				width: 0px;
+				height: 0px;
+            }
+            .triangle1 {
+                left: -5%;
+                transform: rotate(-30deg);
+            }
+            .triangle2 {
+                right: -5%;
+                transform: rotate(30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wheel">
+            <div class="wheel__inner-border wheel-center wheel__border">
+                <div class="wheel__html wheel__border--hair">
+                    <div class="html__text">HTML</div>
+                </div>
+                <div class="wheel__css wheel__border--hair">
+                    <div class="css__text">CSS</div>
+                </div>
+                <div class="wheel__js wheel__border--hair">
+                    <div class="js__text">JS</div>
+                </div>
+                <div class="wheel__core wheel-center wheel__border">
+                    <div class="triangle triangle1"></div>
+                    <!-- <div class="triangle triangle2"></div> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

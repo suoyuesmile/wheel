@@ -21,7 +21,7 @@ const server = http.createServer(async(req, res) => {
     if (req.url.match('/data')) {
         const query = req.url.split('?')[1];
         const searchParams = new URLSearchParams(query);
-        const countValue = searchParams.get('count');
+        const countValue = searchParams.get('q');
         await wait(3000);
         res.write(`responce ok ${countValue}`);
         res.end();
