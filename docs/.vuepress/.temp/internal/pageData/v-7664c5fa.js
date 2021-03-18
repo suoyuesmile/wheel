@@ -18,13 +18,3 @@ export const data = {
     ]
   }
 }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  __VUE_HMR_RUNTIME__.updatePageData(data)
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept()
-  __VUE_HMR_RUNTIME__.updatePageData(data)
-}
