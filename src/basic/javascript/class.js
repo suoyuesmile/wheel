@@ -8,7 +8,7 @@ __Class.prototype = {
     },
     protoFn(arg) {
         console.log('prototype function', arg);
-    } 
+    }
 }
 
 
