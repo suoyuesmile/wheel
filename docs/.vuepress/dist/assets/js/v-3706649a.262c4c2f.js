@@ -1,1 +1,0 @@
-(self.webpackChunkwheel=self.webpackChunkwheel||[]).push([[88],{38:(e,t,l)=>{"use strict";l.r(t),l.d(t,{data:()=>a});const a={key:"v-3706649a",path:"/404.html",title:"",lang:"zh-CN",frontmatter:{layout:"404"},excerpt:"",headers:[],filePathRelative:null,git:{}}},758:(e,t,l)=>{"use strict";l.r(t),l.d(t,{default:()=>a});const a={render:function(e,t){return null}}}}]);
