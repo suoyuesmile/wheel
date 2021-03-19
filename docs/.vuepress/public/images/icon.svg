@@ -1,4 +1,4 @@
-<svg version="1.1" baseline-shift="full" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" baseline-shift="full" width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <circle id="circle" cx="200" cy="200" r="140" fill="white" />
     <clipPath id="clip">
         <use xlink:href="#circle"/>
