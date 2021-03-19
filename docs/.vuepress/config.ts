@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 
 export default defineUserConfig<DefaultThemeOptions>({
-    base: '/wheel/',
+    base: "/wheel/",
     locales: {
         "/": {
             lang: "zh-CN",
@@ -16,7 +16,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
     },
     themeConfig: {
-        logo: "http://localhost:8080/images/icon2.png",
+        logo: "https://suoyuesmile.github.io/wheel/images/icon2.png",
         repo: "suoyuesmile/wheel",
         sidebar: {
             "/basic": [
