@@ -16,7 +16,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
     },
     themeConfig: {
-        logo: "https://suoyuesmile.github.io/wheel/images/icon2.png",
+        logo: "https://suoyuesmile.github.io/wheel/images/icon.svg",
         repo: "suoyuesmile/wheel",
         sidebar: {
             "/basic": [
