@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/suoyuesmile/wheel">
-    <img width="300" height="300" src="https://raw.githubusercontent.com/suoyuesmile/wheel/master/preview/images/icon.svg" />
+    <img width="300" height="300" src="https://suoyuesmile.github.io/wheel/images/icon.svg" />
   </a>
   <h2 style="font-size: 5rem; font-weight: bold;" >Frontend Whee </h2>
 </div>

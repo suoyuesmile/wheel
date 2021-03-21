@@ -5,7 +5,7 @@ export default [
     name: "v-74458d05",
     path: "/css/",
     component: Vuepress,
-    meta: { title: "" },
+    meta: { title: "CSS 怎么学？" },
   },
   {
     path: "/css/index.html",

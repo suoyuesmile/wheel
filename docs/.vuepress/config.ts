@@ -89,6 +89,17 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: 'three-col'
                     }]
                 },
+                {
+                    isGroup: true,
+                    text: "CSS 规范",
+                    children: [{
+                        text: 'bem',
+                        link: 'center'
+                    }, {
+                        text: '避免全局污染',
+                        link: 'tow-col'
+                    }]
+                },
             ],
             "/js": [
                 {

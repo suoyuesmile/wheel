@@ -1,3 +1,4 @@
+## 实现一个apply
 #### 完整代码
 ```js
 Function.prototype.__apply = function() {

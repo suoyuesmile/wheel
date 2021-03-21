@@ -5,7 +5,7 @@ export default [
     name: "v-14b2ee8b",
     path: "/html/",
     component: Vuepress,
-    meta: { title: "" },
+    meta: { title: "HTML" },
   },
   {
     path: "/html/index.html",
