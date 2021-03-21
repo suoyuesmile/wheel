@@ -1,38 +1,182 @@
   export const themeData = {
-  "logo": "http://localhost:8080/images/icon2.png",
+  "logo": "https://suoyuesmile.github.io/wheel/images/icon.svg",
   "repo": "suoyuesmile/wheel",
   "sidebar": {
-    "/basic": [
+    "/css": [
       {
         "isGroup": true,
-        "text": "JavaScript 实现",
+        "text": "CSS 常用布局",
         "children": [
-          "ajax.md",
-          "axios.md",
-          "call.md",
-          "copy-deep.md",
-          "currying.md",
-          "extend.md",
-          "instanceof.md",
-          "objectcreate.md",
-          "promise.md",
-          "sleep.md",
-          "apply.md",
-          "bind.md",
-          "class.md",
-          "copy-shadow.md",
-          "debounce.md",
-          "flat.md",
-          "new.md",
-          "pipe.md",
-          "reduce.md"
+          {
+            "text": "垂直居中",
+            "link": "center"
+          },
+          {
+            "text": "两栏布局",
+            "link": "tow-col"
+          },
+          {
+            "text": "三栏布局",
+            "link": "three-col"
+          },
+          {
+            "text": "横排",
+            "link": "three-col"
+          },
+          {
+            "text": "宫格",
+            "link": "grid"
+          },
+          {
+            "text": "缩放",
+            "link": "flexbox"
+          },
+          {
+            "text": "屏幕固定",
+            "link": "fixed"
+          }
         ]
       },
       {
         "isGroup": true,
-        "text": "CSS 实现",
+        "text": "CSS 多边形",
         "children": [
-          "换肤"
+          {
+            "text": "",
+            "link": "center"
+          },
+          {
+            "text": "两栏布局",
+            "link": "tow-col"
+          },
+          {
+            "text": "三栏布局",
+            "link": "three-col"
+          }
+        ]
+      },
+      {
+        "isGroup": true,
+        "text": "CSS 动画",
+        "children": [
+          {
+            "text": "淡入淡出",
+            "link": "center"
+          },
+          {
+            "text": "平移",
+            "link": "tow-col"
+          },
+          {
+            "text": "旋转",
+            "link": "three-col"
+          }
+        ]
+      },
+      {
+        "isGroup": true,
+        "text": "CSS 响应式",
+        "children": [
+          {
+            "text": "rem",
+            "link": "center"
+          },
+          {
+            "text": "vw",
+            "link": "tow-col"
+          },
+          {
+            "text": "hairline(1px细线)",
+            "link": "three-col"
+          }
+        ]
+      }
+    ],
+    "/js": [
+      {
+        "isGroup": true,
+        "text": "JavaScript实现API",
+        "children": [
+          {
+            "text": "apply",
+            "link": "apply.md"
+          },
+          {
+            "text": "ajax",
+            "link": "ajax.md"
+          },
+          {
+            "text": "axios",
+            "link": "axios.md"
+          },
+          {
+            "text": "call",
+            "link": "call.md"
+          },
+          {
+            "text": "copy",
+            "link": "copy.md"
+          },
+          {
+            "text": "currying",
+            "link": "currying.md"
+          },
+          {
+            "text": "extend",
+            "link": "extend.md"
+          },
+          {
+            "text": "instance of",
+            "link": "instanceof.md"
+          },
+          {
+            "text": "object create",
+            "link": "objectcreate.md"
+          },
+          {
+            "text": "promise",
+            "link": "promise.md"
+          },
+          {
+            "text": "sleep",
+            "link": "sleep.md"
+          },
+          {
+            "text": "apply",
+            "link": "apply.md"
+          },
+          {
+            "text": "bind",
+            "link": "bind.md"
+          },
+          {
+            "text": "class",
+            "link": "class.md"
+          },
+          {
+            "text": "copy-shadow",
+            "link": "copy-shadow.md"
+          },
+          {
+            "text": "debounce",
+            "link": "debounce.md"
+          },
+          {
+            "text": "flat",
+            "link": "flat.md"
+          },
+          {
+            "text": "new",
+            "link": "new.md"
+          },
+          {
+            "text": "pipe",
+            "link": "pipe.md"
+          },
+          {
+            "text": "reduce",
+            "link": "reduce.md"
+          }
         ]
       }
     ]
@@ -41,11 +185,19 @@
     "/": {
       "selectLanguageName": "简体中文",
       "selectText": "Languages",
-      "editLinkText": "Edit this page on GitHub",
+      "editLinkText": "在GitHub上编辑",
       "navbar": [
         {
-          "text": "HTML + CSS + JavaScript",
-          "link": "/basic/"
+          "text": "JavaScript",
+          "link": "/js/"
+        },
+        {
+          "text": "CSS",
+          "link": "/css/"
+        },
+        {
+          "text": "HTML",
+          "link": "/html/"
         },
         {
           "text": "前端框架",

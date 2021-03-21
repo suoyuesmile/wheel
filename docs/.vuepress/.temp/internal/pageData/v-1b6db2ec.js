@@ -1,21 +1,15 @@
 export const data = {
-  "key": "v-53ba8e02",
-  "path": "/basic/bind.html",
+  "key": "v-1b6db2ec",
+  "path": "/js/ajax.html",
   "title": "",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "filePathRelative": "basic/bind.md",
+  "filePathRelative": "js/ajax.md",
   "git": {
-    "updatedTime": 1616057147000,
-    "contributors": [
-      {
-        "name": "shaosuo",
-        "email": "suoyuesmile@163.com",
-        "commits": 1
-      }
-    ]
+    "updatedTime": null,
+    "contributors": []
   }
 }
 
