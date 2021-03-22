@@ -8,7 +8,23 @@ export const data = {
   "headers": [],
   "filePathRelative": "js/instanceof.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1616397701000,
+    "contributors": [
+      {
+        "name": "shaosuo",
+        "email": "suoyuesmile@163.com",
+        "commits": 1
+      }
+    ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  __VUE_HMR_RUNTIME__.updatePageData(data)
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept()
+  __VUE_HMR_RUNTIME__.updatePageData(data)
 }

@@ -1,0 +1,60 @@
+<html>
+    <div class="demo center1">水平居中1</div>
+    <div class="demo center2">水平居中2</div>
+    <div class="center3">
+        <div class="demo">水平居中3</div>
+    </div>
+    <div class="container">
+        垂直居中
+    </div>
+    <div class="container">
+        <div class="v-center">垂直居中</div>
+    </div>
+    
+</html>
+
+<style>
+    body {
+        color: #fff;
+        font-size: 20px;
+        --bg: #54BF8E;
+    }
+    .container {
+        height: 100px;
+        line-height: 100px;
+        background: var(--bg);
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .v-center {
+        width: 100%;
+        line-height: 50px;
+        background: coral;
+        height: 50px;
+        margin-top: 25px;
+    }
+    .demo {
+        background: var(--bg);
+        margin-top: 20px;
+        width: 40%;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+    .center1 {
+        margin: 0 auto;
+    }
+    .center2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .center3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

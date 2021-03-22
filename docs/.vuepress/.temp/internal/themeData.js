@@ -8,8 +8,8 @@
         "text": "CSS 常用布局",
         "children": [
           {
-            "text": "垂直居中",
-            "link": "center"
+            "text": "垂直水平居中",
+            "link": "center.md"
           },
           {
             "text": "两栏布局",
