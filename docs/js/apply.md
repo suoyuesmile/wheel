@@ -1,4 +1,4 @@
-## 实现一个apply
+## 实现一个 apply
 #### 完整代码
 ```js
 Function.prototype.__apply = function() {
@@ -13,7 +13,6 @@ Function.prototype.__apply = function() {
 ```
 #### 核心思路
 #### 层层递进
-1. 
 #### 运行测试
 ```js
 // test

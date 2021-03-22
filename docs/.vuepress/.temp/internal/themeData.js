@@ -42,15 +42,19 @@
         "text": "CSS 多边形",
         "children": [
           {
-            "text": "",
-            "link": "center"
+            "text": "圆形",
+            "link": "circle"
           },
           {
-            "text": "两栏布局",
+            "text": "梯形",
             "link": "tow-col"
           },
           {
-            "text": "三栏布局",
+            "text": "三角形",
+            "link": "three-col"
+          },
+          {
+            "text": "锯齿形",
             "link": "three-col"
           }
         ]
@@ -90,60 +94,34 @@
             "link": "three-col"
           }
         ]
+      },
+      {
+        "isGroup": true,
+        "text": "CSS 规范",
+        "children": [
+          {
+            "text": "bem",
+            "link": "center"
+          },
+          {
+            "text": "避免全局污染",
+            "link": "tow-col"
+          }
+        ]
       }
     ],
     "/js": [
       {
         "isGroup": true,
-        "text": "JavaScript实现API",
+        "text": "实现API",
         "children": [
           {
             "text": "apply",
             "link": "apply.md"
           },
           {
-            "text": "ajax",
-            "link": "ajax.md"
-          },
-          {
-            "text": "axios",
-            "link": "axios.md"
-          },
-          {
             "text": "call",
             "link": "call.md"
-          },
-          {
-            "text": "copy",
-            "link": "copy.md"
-          },
-          {
-            "text": "currying",
-            "link": "currying.md"
-          },
-          {
-            "text": "extend",
-            "link": "extend.md"
-          },
-          {
-            "text": "instance of",
-            "link": "instanceof.md"
-          },
-          {
-            "text": "object create",
-            "link": "objectcreate.md"
-          },
-          {
-            "text": "promise",
-            "link": "promise.md"
-          },
-          {
-            "text": "sleep",
-            "link": "sleep.md"
-          },
-          {
-            "text": "apply",
-            "link": "apply.md"
           },
           {
             "text": "bind",
@@ -154,28 +132,76 @@
             "link": "class.md"
           },
           {
-            "text": "copy-shadow",
-            "link": "copy-shadow.md"
-          },
-          {
-            "text": "debounce",
-            "link": "debounce.md"
-          },
-          {
-            "text": "flat",
-            "link": "flat.md"
+            "text": "extend",
+            "link": "extend.md"
           },
           {
             "text": "new",
             "link": "new.md"
           },
           {
-            "text": "pipe",
-            "link": "pipe.md"
+            "text": "instance of",
+            "link": "instanceof.md"
+          },
+          {
+            "text": "promise",
+            "link": "promise.md"
+          },
+          {
+            "text": "sleep",
+            "link": "sleep.md"
           },
           {
             "text": "reduce",
             "link": "reduce.md"
+          }
+        ]
+      },
+      {
+        "isGroup": true,
+        "text": "常用实现",
+        "children": [
+          {
+            "text": "浅拷贝",
+            "link": "copy-shadow.md"
+          },
+          {
+            "text": "深拷贝",
+            "link": "copy-deep.md"
+          },
+          {
+            "text": "防抖",
+            "link": "debounce.md"
+          },
+          {
+            "text": "节流",
+            "link": "debounce.md"
+          },
+          {
+            "text": "数组扁平化",
+            "link": "flat.md"
+          },
+          {
+            "text": "柯里化",
+            "link": "currying.md"
+          }
+        ]
+      },
+      {
+        "isGroup": true,
+        "text": "请求封装",
+        "children": [
+          {
+            "text": "ajax",
+            "link": "ajax.md"
+          },
+          {
+            "text": "axios",
+            "link": "axios.md"
+          },
+          {
+            "text": "封装api",
+            "link": "api.md"
           }
         ]
       }

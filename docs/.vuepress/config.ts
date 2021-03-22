@@ -23,93 +23,195 @@ export default defineUserConfig<DefaultThemeOptions>({
                 {
                     isGroup: true,
                     text: "CSS 常用布局",
-                    children: [{
-                        text: '垂直居中',
-                        link: 'center'
-                    }, {
-                        text: '两栏布局',
-                        link: 'tow-col'
-                    }, {
-                        text: '三栏布局',
-                        link: 'three-col'
-                    }, {
-                        text: '横排',
-                        link: 'three-col'
-                    }, {
-                        text: '宫格',
-                        link: 'grid',
-                    }, {
-                        text: '缩放',
-                        link: 'flexbox'
-                    }, {
-                        text: '屏幕固定',
-                        link: 'fixed'
-                    }
-                    ]
+                    children: [
+                        {
+                            text: "垂直居中",
+                            link: "center",
+                        },
+                        {
+                            text: "两栏布局",
+                            link: "tow-col",
+                        },
+                        {
+                            text: "三栏布局",
+                            link: "three-col",
+                        },
+                        {
+                            text: "横排",
+                            link: "three-col",
+                        },
+                        {
+                            text: "宫格",
+                            link: "grid",
+                        },
+                        {
+                            text: "缩放",
+                            link: "flexbox",
+                        },
+                        {
+                            text: "屏幕固定",
+                            link: "fixed",
+                        },
+                    ],
                 },
                 {
                     isGroup: true,
                     text: "CSS 多边形",
-                    children: [{
-                        text: '',
-                        link: 'center'
-                    }, {
-                        text: '两栏布局',
-                        link: 'tow-col'
-                    }, {
-                        text: '三栏布局',
-                        link: 'three-col'
-                    }]
+                    children: [
+                        {
+                            text: "圆形",
+                            link: "circle",
+                        },
+                        {
+                            text: "梯形",
+                            link: "tow-col",
+                        },
+                        {
+                            text: "三角形",
+                            link: "three-col",
+                        },
+                        {
+                            text: "锯齿形",
+                            link: "three-col",
+                        },
+                    ],
                 },
                 {
                     isGroup: true,
                     text: "CSS 动画",
-                    children: [{
-                        text: '淡入淡出',
-                        link: 'center'
-                    }, {
-                        text: '平移',
-                        link: 'tow-col'
-                    }, {
-                        text: '旋转',
-                        link: 'three-col'
-                    }]
+                    children: [
+                        {
+                            text: "淡入淡出",
+                            link: "center",
+                        },
+                        {
+                            text: "平移",
+                            link: "tow-col",
+                        },
+                        {
+                            text: "旋转",
+                            link: "three-col",
+                        },
+                    ],
                 },
                 {
                     isGroup: true,
                     text: "CSS 响应式",
-                    children: [{
-                        text: 'rem',
-                        link: 'center'
-                    }, {
-                        text: 'vw',
-                        link: 'tow-col'
-                    }, {
-                        text: 'hairline(1px细线)',
-                        link: 'three-col'
-                    }]
+                    children: [
+                        {
+                            text: "rem",
+                            link: "center",
+                        },
+                        {
+                            text: "vw",
+                            link: "tow-col",
+                        },
+                        {
+                            text: "hairline(1px细线)",
+                            link: "three-col",
+                        },
+                    ],
                 },
                 {
                     isGroup: true,
                     text: "CSS 规范",
-                    children: [{
-                        text: 'bem',
-                        link: 'center'
-                    }, {
-                        text: '避免全局污染',
-                        link: 'tow-col'
-                    }]
+                    children: [
+                        {
+                            text: "bem",
+                            link: "center",
+                        },
+                        {
+                            text: "避免全局污染",
+                            link: "tow-col",
+                        },
+                    ],
                 },
             ],
             "/js": [
                 {
                     isGroup: true,
-                    text: "JavaScript实现API",
+                    text: "实现API",
                     children: [
                         {
-                            text: 'apply',
-                            link: 'apply.md'
+                            text: "apply",
+                            link: "apply.md",
                         },
+                        {
+                            text: "call",
+                            link: "call.md",
+                        },
+                        {
+                            text: "bind",
+                            link: "bind.md",
+                        },
+                        {
+                            text: "class",
+                            link: "class.md",
+                        },
+                        {
+                            text: "extend",
+                            link: "extend.md",
+                        },
+                        {
+                            text: "new",
+                            link: "new.md",
+                        },
+                        // {
+                        //     text: "object create",
+                        //     link: "objectcreate.md",
+                        // },
+                        {
+                            text: "instance of",
+                            link: "instanceof.md",
+                        },
+                        {
+                            text: "promise",
+                            link: "promise.md",
+                        },
+                        {
+                            text: "sleep",
+                            link: "sleep.md",
+                        },
+                        {
+                            text: "reduce",
+                            link: "reduce.md",
+                        },
+                    ],
+                },
+                {
+                    isGroup: true,
+                    text: "常用实现",
+                    children: [
+                        {
+                            text: "浅拷贝",
+                            link: "copy-shadow.md",
+                        },
+                        {
+                            text: "深拷贝",
+                            link: "copy-deep.md",
+                        },
+                        {
+                            text: "防抖",
+                            link: "debounce.md",
+                        },
+                        {
+                            text: "节流",
+                            link: "debounce.md",
+                        },
+                        {
+                            text: "数组扁平化",
+                            link: "flat.md",
+                        },
+                        {
+                            text: "柯里化",
+                            link: "currying.md",
+                        },
+                    ],
+                },
+                {
+                    isGroup: true,
+                    text: "请求封装",
+                    children: [
                         {
                             text: "ajax",
                             link: "ajax.md",
@@ -121,88 +223,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                         },
 
                         {
-                            text: "call",
-                            link: "call.md",
-                        },
-
-                        {
-                            text: "copy",
-                            link: "copy.md",
-                        },
-
-                        {
-                            text: "currying",
-                            link: "currying.md",
-                        },
-
-                        {
-                            text: "extend",
-                            link: "extend.md",
-                        },
-
-                        {
-                            text: "instance of",
-                            link: "instanceof.md",
-                        },
-
-                        {
-                            text: "object create",
-                            link: "objectcreate.md",
-                        },
-
-                        {
-                            text: "promise",
-                            link: "promise.md",
-                        },
-
-                        {
-                            text: "sleep",
-                            link: "sleep.md",
-                        },
-
-                        {
-                            text: "apply",
-                            link: "apply.md",
-                        },
-
-                        {
-                            text: "bind",
-                            link: "bind.md",
-                        },
-
-                        {
-                            text: "class",
-                            link: "class.md",
-                        },
-
-                        {
-                            text: "copy-shadow",
-                            link: "copy-shadow.md",
-                        },
-
-                        {
-                            text: "debounce",
-                            link: "debounce.md",
-                        },
-
-                        {
-                            text: "flat",
-                            link: "flat.md",
-                        },
-
-                        {
-                            text: "new",
-                            link: "new.md",
-                        },
-
-                        {
-                            text: "pipe",
-                            link: "pipe.md",
-                        },
-
-                        {
-                            text: "reduce",
-                            link: "reduce.md",
+                            text: "封装api",
+                            link: "api.md",
                         },
                     ],
                 },
