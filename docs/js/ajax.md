@@ -7,7 +7,7 @@
  
  **问题是怎么通过 `XMLHttpRequest` 去发送请求和拿到数据呢？**
 <div align="center">
-    <img width="200" height="200" src="https://suoyuesmile.github.io/wheel/images/think.svg" />
+    <img width="120" height="150" src="https://suoyuesmile.github.io/wheel/images/think.svg" />
 </div>
 
  依据我们学习JavaScript内核，我们在在脑海里潜意识中形成一个答案：
@@ -40,7 +40,7 @@ var request = new XMLHttpRequest();
 const xhr = new XMLHttpRequest();
 xhr.onprogress = function() { … };
 ```
-简而言之：这是一个不需要节点对象触发的时间监听。监听的是请求响应状态码的改变。由此控制请求中各个阶段的处理。
+简而言之：这是一个不需要节点对象触发的事件监听。监听的是请求响应状态码的改变。由此控制请求中各个阶段的处理。
 
 2. `XMLHttpRequest.readyState` 请求的状态码
 
@@ -142,7 +142,7 @@ function ajax(url, method, header, success, error) {
 }
 ```
 <div align="center">
-    <img width="200" height="200" src="https://suoyuesmile.github.io/wheel/images/test.svg" />
+    <img width="120" height="150" src="https://suoyuesmile.github.io/wheel/images/test.svg" />
 </div>
 #### 最后测试下请求的发送
 ```html

@@ -1,11 +1,18 @@
 export const data = {
   "key": "v-1b6db2ec",
   "path": "/js/ajax.html",
-  "title": "",
+  "title": "简单实现一个 AJAX",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "参考",
+      "slug": "参考",
+      "children": []
+    }
+  ],
   "filePathRelative": "js/ajax.md",
   "git": {
     "updatedTime": 1616336798000,

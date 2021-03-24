@@ -15,8 +15,14 @@ export const data = {
   ],
   "filePathRelative": "css/center.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1616404561000,
+    "contributors": [
+      {
+        "name": "shaosuo",
+        "email": "suoyuesmile@163.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

@@ -5,7 +5,7 @@ export default [
     name: "v-1b6db2ec",
     path: "/js/ajax.html",
     component: Vuepress,
-    meta: { title: "" },
+    meta: { title: "简单实现一个 AJAX" },
   },
   {
     path: "/js/ajax.md",

@@ -2,9 +2,9 @@ import { defineAsyncComponent } from 'vue'
 
 export const pagesComponent = {
   "/": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/README.vue")),
-  "/html/": defineAsyncComponent(() => import(/* webpackChunkName: "v-14b2ee8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/html/README.vue")),
   "/css/": defineAsyncComponent(() => import(/* webpackChunkName: "v-74458d05" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/css/README.vue")),
   "/css/center.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-03cb2102" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/css/center.vue")),
+  "/html/": defineAsyncComponent(() => import(/* webpackChunkName: "v-14b2ee8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/html/README.vue")),
   "/js/": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d0a9a6d" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/README.vue")),
   "/js/ajax.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b6db2ec" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/ajax.vue")),
   "/js/apply.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-37e22f50" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/apply.vue")),

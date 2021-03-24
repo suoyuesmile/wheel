@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>socket</title>
+    </head>
+    <body>
+        <h2>输入文字请求</h2>
+        <input class="input"></input>
+        <button class="button">发送</button>
+        <h2>data:</h2>
+        <div class="response-data"></div>
+
+        <script>
+            var oInputs = document.getElementsByClassName('input');
+            var oButtons = document.getElementsByClassName('button');
+            var oResponseDatas = document.getElementsByClassName('response-data');
+            var oResponseData = oResponseDatas.length && oResponseDatas[0];
+
+
+            if (oButtons.length) {
+                oButtons[0].addEventListener('click', onClick, false);
+            }
+
+            function onClick() {
+                var socket = new WebSocket('ws://localhost:3000');
+
+                socket.open = function() {
+                    console.log('open');
+                    socket.send('123');
+                }
+                socket.onmessage = function(event) {
+                    console.log('message', event);
+                }
+
+                socket.onclose = function() {
+                    console.log('close');
+                    
+                }
+                oResponseData.innerHTML = 'loading...';
+
+                // oResponseData.innerHTML = res;
+            }
+
+
+        </script>
+    </body>
+</html>

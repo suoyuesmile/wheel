@@ -1,8 +1,8 @@
 export const pagesData = {
   "/": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-8daa1a0e.js").then(({ data }) => data),
-  "/html/": () => import(/* webpackChunkName: "v-14b2ee8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-14b2ee8b.js").then(({ data }) => data),
   "/css/": () => import(/* webpackChunkName: "v-74458d05" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-74458d05.js").then(({ data }) => data),
   "/css/center.html": () => import(/* webpackChunkName: "v-03cb2102" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-03cb2102.js").then(({ data }) => data),
+  "/html/": () => import(/* webpackChunkName: "v-14b2ee8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-14b2ee8b.js").then(({ data }) => data),
   "/js/": () => import(/* webpackChunkName: "v-2d0a9a6d" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-2d0a9a6d.js").then(({ data }) => data),
   "/js/ajax.html": () => import(/* webpackChunkName: "v-1b6db2ec" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-1b6db2ec.js").then(({ data }) => data),
   "/js/apply.html": () => import(/* webpackChunkName: "v-37e22f50" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageData/v-37e22f50.js").then(({ data }) => data),
