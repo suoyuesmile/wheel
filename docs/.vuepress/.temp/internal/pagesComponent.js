@@ -4,6 +4,7 @@ export const pagesComponent = {
   "/": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/README.vue")),
   "/css/": defineAsyncComponent(() => import(/* webpackChunkName: "v-74458d05" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/css/README.vue")),
   "/css/center.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-03cb2102" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/css/center.vue")),
+  "/framework/hmr.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-078e8096" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/framework/hmr.vue")),
   "/html/": defineAsyncComponent(() => import(/* webpackChunkName: "v-14b2ee8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/html/README.vue")),
   "/js/": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d0a9a6d" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/README.vue")),
   "/js/ajax.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b6db2ec" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/ajax.vue")),
@@ -21,5 +22,7 @@ export const pagesComponent = {
   "/js/promise.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-14235f8b" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/promise.vue")),
   "/js/reduce.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-f7336ab4" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/reduce.vue")),
   "/js/sleep.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-705a12e2" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/sleep.vue")),
+  "/js/socket.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-f7033e8e" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/js/socket.vue")),
   "/404.html": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/404.html.vue")),
+  "/framework/": defineAsyncComponent(() => import(/* webpackChunkName: "v-7d72c4ac" */"/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/pages/framework/README.vue")),
 }

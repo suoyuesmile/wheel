@@ -1,31 +1,19 @@
 export const data = {
-  "key": "v-1b6db2ec",
-  "path": "/js/ajax.html",
-  "title": "简单实现一个 AJAX",
+  "key": "v-f7033e8e",
+  "path": "/js/socket.html",
+  "title": "",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [
-    {
-      "level": 3,
-      "title": "参考",
-      "slug": "参考",
-      "children": []
-    }
-  ],
-  "filePathRelative": "js/ajax.md",
+  "headers": [],
+  "filePathRelative": "js/socket.md",
   "git": {
     "updatedTime": 1616583490000,
     "contributors": [
       {
         "name": "shaosuo",
         "email": "suoyuesmile@163.com",
-        "commits": 2
-      },
-      {
-        "name": "suoyuesmile",
-        "email": "suoyuesmile@163.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }

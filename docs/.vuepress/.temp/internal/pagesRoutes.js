@@ -2,24 +2,27 @@ import { Vuepress } from '@vuepress/client/lib/components/Vuepress'
 import pageRoutes0 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-8daa1a0e.js'
 import pageRoutes1 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-74458d05.js'
 import pageRoutes2 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-03cb2102.js'
-import pageRoutes3 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-14b2ee8b.js'
-import pageRoutes4 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-2d0a9a6d.js'
-import pageRoutes5 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-1b6db2ec.js'
-import pageRoutes6 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-37e22f50.js'
-import pageRoutes7 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-437fc450.js'
-import pageRoutes8 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-553dea22.js'
-import pageRoutes9 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-63133d24.js'
-import pageRoutes10 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-65260ee4.js'
-import pageRoutes11 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-65215a7c.js'
-import pageRoutes12 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-19b9d5ce.js'
-import pageRoutes13 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-13bb66e3.js'
-import pageRoutes14 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-20a07172.js'
-import pageRoutes15 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-f1e22dc0.js'
-import pageRoutes16 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-1e5478a6.js'
-import pageRoutes17 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-14235f8b.js'
-import pageRoutes18 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-f7336ab4.js'
-import pageRoutes19 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-705a12e2.js'
-import pageRoutes20 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-3706649a.js'
+import pageRoutes3 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-078e8096.js'
+import pageRoutes4 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-14b2ee8b.js'
+import pageRoutes5 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-2d0a9a6d.js'
+import pageRoutes6 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-1b6db2ec.js'
+import pageRoutes7 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-37e22f50.js'
+import pageRoutes8 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-437fc450.js'
+import pageRoutes9 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-553dea22.js'
+import pageRoutes10 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-63133d24.js'
+import pageRoutes11 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-65260ee4.js'
+import pageRoutes12 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-65215a7c.js'
+import pageRoutes13 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-19b9d5ce.js'
+import pageRoutes14 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-13bb66e3.js'
+import pageRoutes15 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-20a07172.js'
+import pageRoutes16 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-f1e22dc0.js'
+import pageRoutes17 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-1e5478a6.js'
+import pageRoutes18 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-14235f8b.js'
+import pageRoutes19 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-f7336ab4.js'
+import pageRoutes20 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-705a12e2.js'
+import pageRoutes21 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-f7033e8e.js'
+import pageRoutes22 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-3706649a.js'
+import pageRoutes23 from '/Users/suosmile/www/project/wheel/docs/.vuepress/.temp/internal/pageRoutes/v-7d72c4ac.js'
 
 export const pagesRoutes = [
   ...pageRoutes0,
@@ -43,6 +46,9 @@ export const pagesRoutes = [
   ...pageRoutes18,
   ...pageRoutes19,
   ...pageRoutes20,
+  ...pageRoutes21,
+  ...pageRoutes22,
+  ...pageRoutes23,
   {
     name: "404",
     path: "/:catchAll(.*)",

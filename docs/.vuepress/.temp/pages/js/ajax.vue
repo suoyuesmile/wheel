@@ -2,6 +2,9 @@
 <p><code>AJAX</code> 的全称为 <code>Asynchronous JavaScript + XML</code>， 最重要的要属 <code>XHR</code> (<code>XMLHttpRequest</code>)</p>
 <p><code>XMLHttpRequest</code> 通过不刷新页面请求特定URL，获取数据。</p>
 <p><strong>问题是怎么通过 <code>XMLHttpRequest</code> 去发送请求和拿到数据呢？</strong></p>
+<div align="center">
+    <img width="120" height="150" src="https://suoyuesmile.github.io/wheel/images/think.svg" />
+</div>
 <p>依据我们学习JavaScript内核，我们在在脑海里潜意识中形成一个答案：</p>
 <p><strong>弄一个类，实例化然后初始化请求，发送，发送完了在监听响应</strong>。</p>
 <p>立刻写出伪代码, 1、2、3、4</p>
@@ -22,7 +25,7 @@ xhr<span class="token punctuation">.</span><span class="token function">listener
 </blockquote>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 xhr<span class="token punctuation">.</span><span class="token function-variable function">onprogress</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> … <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>简而言之：这是一个不需要节点对象触发的时间监听。监听的是请求响应状态码的改变。由此控制请求中各个阶段的处理。</p>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>简而言之：这是一个不需要节点对象触发的事件监听。监听的是请求响应状态码的改变。由此控制请求中各个阶段的处理。</p>
 <ol start="2">
 <li><code>XMLHttpRequest.readyState</code> 请求的状态码</li>
 </ol>
@@ -174,21 +177,26 @@ xhr<span class="token punctuation">.</span><span class="token function">send</sp
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h4 id="最后测试下请求的发送"><a class="header-anchor" href="#最后测试下请求的发送">#</a> 最后测试下请求的发送</h4>
-<div class="language-markup ext-html line-numbers-mode"><pre v-pre class="language-markup"><code>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">// get </span>
-<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token string">'http://localhost:8000'</span><span class="token punctuation">,</span> <span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div align="center">
+    <img width="120" height="150" src="https://suoyuesmile.github.io/wheel/images/test.svg" />
+</div>
+#### 最后测试下请求的发送
+```html
+<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>
+```js
+// get 
+ajax('http://localhost:8000', 'GET', () =&gt; {
 
-<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+}, () =&gt; {
 
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
+})
 
-<span class="token comment">// post</span>
-<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token string">'http://localhost:8000'</span><span class="token punctuation">,</span> <span class="token string">'POST'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ok'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="参考"><a class="header-anchor" href="#参考">#</a> 参考</h3>
+// post
+ajax('http://localhost:8000', 'POST', {}, () =&gt; {
+    console.log('ok');
+}, () =&gt; {
+    console.log('error');
+})
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="参考"><a class="header-anchor" href="#参考">#</a> 参考</h3>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers<OutboundLink/></a></p>
 </template>

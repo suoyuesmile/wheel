@@ -1,31 +1,19 @@
 export const data = {
-  "key": "v-1b6db2ec",
-  "path": "/js/ajax.html",
-  "title": "简单实现一个 AJAX",
+  "key": "v-078e8096",
+  "path": "/framework/hmr.html",
+  "title": "简单实现 Vite 热更新",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [
-    {
-      "level": 3,
-      "title": "参考",
-      "slug": "参考",
-      "children": []
-    }
-  ],
-  "filePathRelative": "js/ajax.md",
+  "headers": [],
+  "filePathRelative": "framework/hmr.md",
   "git": {
-    "updatedTime": 1616583490000,
+    "updatedTime": 1616665262000,
     "contributors": [
       {
         "name": "shaosuo",
         "email": "suoyuesmile@163.com",
-        "commits": 2
-      },
-      {
-        "name": "suoyuesmile",
-        "email": "suoyuesmile@163.com",
-        "commits": 2
+        "commits": 1
       }
     ]
   }

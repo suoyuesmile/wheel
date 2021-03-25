@@ -205,6 +205,18 @@
           }
         ]
       }
+    ],
+    "/framework": [
+      {
+        "isGroup": true,
+        "text": "工程化",
+        "children": [
+          {
+            "text": "热更新",
+            "link": "hmr.md"
+          }
+        ]
+      }
     ]
   },
   "locales": {
@@ -227,15 +239,15 @@
         },
         {
           "text": "前端框架",
-          "link": "/framework"
+          "link": "/framework/"
         },
         {
           "text": "Mini框架",
-          "link": "/framework"
+          "link": "/framework-mini/"
         },
         {
           "text": "基础组件",
-          "link": "/Component"
+          "link": "/component/"
         }
       ],
       "danger": "WARNING"

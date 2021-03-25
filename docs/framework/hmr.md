@@ -12,13 +12,13 @@
     <img width="120" height="150" src="https://suoyuesmile.github.io/wheel/images/think.svg" />
 </div>
 
-首先我们把整个过程分成两步
+首先我们把整个过程分成3步
 
-1. 监听文件变动
-2. 读取文件内容
-3. 通知浏览器更新页面
+**1. 监听文件变动**
+**2. 读取文件内容**
+**3. 通知浏览器更新页面**
 
-写出伪代码 1、 2
+写出伪代码 1、 2、3
 
 ```js
 // server
@@ -37,7 +37,7 @@ send(fileContent); // 2
 (fs.FSWatcher) fs.watch(filename[, options][, listener])
 ```
 
-但是更加查看一些文档，https://stackoverflow.com/questions/10762630/nodejs-fs-watch-on-directory-only-fires-when-changed-by-editor-but-not-shell-or
+但是更加查看一些文档，[stackoverflow](https://stackoverflow.com/questions/10762630/nodejs-fs-watch-on-directory-only-fires-when-changed-by-editor-but-not-shell-or)
 
 发现node原生的watch api，存在些许问题。 这个时候回去找些库来实现
 
@@ -50,7 +50,7 @@ chokidar.watch('demo/chokidar').on('all', (event, path) => {
     console.log(path);
 });
 ```
-[!img](https://pic2.zhimg.com/v2-944f5c643c03c3d62202bbf422ea31ed_r.jpg)
+![image](https://pic2.zhimg.com/v2-944f5c643c03c3d62202bbf422ea31ed_r.jpg)
 成功监听到了文件的变动，但是发现启动服务起后，就直接打印路径。
 现在我们只想要文件变更时候触发事件。把代码改成这样 all 替换成 change
 去掉 event 参数
@@ -63,7 +63,7 @@ chokidar.watch('demo/chokidar').on('change', (path) => {
 });
 ```
 重启服务器
-[!img](https://pic1.zhimg.com/80/v2-16074827f2394a78c7e58c1dcce6c2b4_1440w.png)
+![image](https://pic1.zhimg.com/80/v2-16074827f2394a78c7e58c1dcce6c2b4_1440w.png)
 
 现在监听文件变动没问题了。
 
@@ -87,7 +87,7 @@ chokidar.watch('demo/ws-chokidar').on('change', (relativePath) => {
 由于监听到的path参数是相对路径，而readFileSync需要读取争取的文件路径
 使用 path 进行库进行拼接。现在看看效果
 
-[!img](https://pic4.zhimg.com/80/v2-7ed8644e72bff68849899d054b675203_1440w.png)
+![image](https://pic4.zhimg.com/80/v2-7ed8644e72bff68849899d054b675203_1440w.png)
 
 当我们随意修改change.html 内容时，控制台输出我们的文件内容和路径
 
@@ -142,7 +142,7 @@ chokidar.watch('demo/ws-chokidar').on('change', (relativePath) => {
     </body>
 </html>
 ```
-[!img](https://pic3.zhimg.com/80/v2-a462f4d7de8ee6a085003fdf1c2599de_1440w.jpg)
+![image](https://pic3.zhimg.com/80/v2-a462f4d7de8ee6a085003fdf1c2599de_1440w.jpg)
 然后我们使用ws给服务器端构建发送和接收器
 ```js
 const chokidar = require('chokidar');
@@ -177,7 +177,7 @@ wss.on('connection', function connection(ws) {
 首先启动 node 服务器。
 然后点击页面发送按钮， 构建 socket 连接。
 
-[!img](https://pic4.zhimg.com/80/v2-26c4690e3bc392c77ed83cf8a9404bf7_1440w.jpg)
+![image](https://pic4.zhimg.com/80/v2-26c4690e3bc392c77ed83cf8a9404bf7_1440w.jpg)
 成功连接
 
 改变change.html 里面的内容。先加一个按钮试试
@@ -185,14 +185,14 @@ wss.on('connection', function connection(ws) {
 <button>这是一个按钮</button>
 ```
 保存文件后，浏览器立即收到了消息，并更新了页面
-[!img](https://pic4.zhimg.com/80/v2-acc3a7dfa4f8f417031ffecbb58e08bf_1440w.jpg)
+![image](https://pic4.zhimg.com/80/v2-acc3a7dfa4f8f417031ffecbb58e08bf_1440w.jpg)
 很快，啪的一下！！！ messge 里面收到了数据，页面也多出了一个按钮。
 
 在change.html 加个稍微复杂点的html，看行不行
 ```html
 <div style="height: 300px; width: 300px; border-radius: 50%; background: crimson;text-align: center; color:white;line-height: 300px;">这是一个球</div>
 ```
-[!img](https://pic1.zhimg.com/80/v2-9b1bec471a5db3e81bd32b7248a88b1c_1440w.jpg)
+![image](https://pic1.zhimg.com/80/v2-9b1bec471a5db3e81bd32b7248a88b1c_1440w.jpg)
 这次大意了没有闪。啪的一下，出来了一个大红球。右边 message 里面多了几个记录。
 
 这次就算基本完成啦。当然正式项目中远没有这么简单。剩下的靠大家直接研究了。
