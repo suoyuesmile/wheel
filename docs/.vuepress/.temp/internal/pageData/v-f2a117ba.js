@@ -1,21 +1,15 @@
 export const data = {
-  "key": "v-7d72c4ac",
-  "path": "/framework/",
-  "title": "框架原理怎么学？",
+  "key": "v-f2a117ba",
+  "path": "/js/private.html",
+  "title": "美国数据加密标准DES",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "filePathRelative": "framework/README.md",
+  "filePathRelative": "js/private.md",
   "git": {
-    "updatedTime": 1616666422000,
-    "contributors": [
-      {
-        "name": "shaosuo",
-        "email": "suoyuesmile@163.com",
-        "commits": 1
-      }
-    ]
+    "updatedTime": null,
+    "contributors": []
   }
 }
 

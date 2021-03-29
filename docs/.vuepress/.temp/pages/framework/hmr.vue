@@ -13,9 +13,10 @@
 <p>写出伪代码 1、 2、3</p>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">// server</span>
 
-fs<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
-<span class="token function">send</span><span class="token punctuation">(</span>fileContent<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>接下来选取方案。</p>
+<span class="token function">watch</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+fileContent <span class="token operator">=</span> <span class="token function">readFile</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token comment">// 2</span>
+<span class="token function">send</span><span class="token punctuation">(</span>fileContent<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>接下来选取方案。</p>
 <h4 id="第一步-监听文件变动"><a class="header-anchor" href="#第一步-监听文件变动">#</a> 第一步：监听文件变动</h4>
 <p>我们知道 nodejs 里面有个<code>fs.watch</code> api。它可以监听文件变动。</p>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token punctuation">(</span>fs<span class="token punctuation">.</span>FSWatcher<span class="token punctuation">)</span> fs<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>filename<span class="token punctuation">[</span><span class="token punctuation">,</span> options<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">,</span> listener<span class="token punctuation">]</span><span class="token punctuation">)</span>

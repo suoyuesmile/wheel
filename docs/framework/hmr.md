@@ -23,8 +23,9 @@
 ```js
 // server
 
-fs.watch(file); // 1
-send(fileContent); // 2
+watch(file); // 1
+fileContent = readFile(file) // 2
+send(fileContent); // 3
 ```
 
 接下来选取方案。

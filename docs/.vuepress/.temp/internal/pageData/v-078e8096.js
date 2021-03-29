@@ -8,12 +8,12 @@ export const data = {
   "headers": [],
   "filePathRelative": "framework/hmr.md",
   "git": {
-    "updatedTime": 1616665262000,
+    "updatedTime": 1616666422000,
     "contributors": [
       {
         "name": "shaosuo",
         "email": "suoyuesmile@163.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }
